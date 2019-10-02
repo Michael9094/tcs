@@ -701,7 +701,7 @@ We will prove that $MONOTONE$ is uncomputable, but the proof will easily general
 
 We start by noting that  $MONOTONE$ is neither the constant zero nor the constant one function:
 
-* The machine $INF$ that simply goes into an infinite loop on every input satisfies $MONOTONE(INF)=1$, since $INF$ is not defined _anywhere_ and so in particular there are no two inputs $x,x'$ where $x_i \leq x'_i$ for every $i$ but  $INF(x)=0$ and $INF(x')=1$.
+* The machine $INF$ that simply goes into an infinite loop on every input satisfies $MONOTONE(INF)=1$, since $INF$ is not defined _anywhere_ and so in particular there are no two inputs $x,x'$ where $x_i \leq x'_i$ for every $i$ but  $INF(x)=1$ and $INF(x')=0$.
 
 * The machine $PAR$  that computes the XOR or parity of its input, is not monotone (e.g., $PAR(1,1,0,0,\ldots,0)=0$ but $PAR(1,0,0,\ldots,0)=0$) and hence $MONOTONE(PAR)=0$.
 
